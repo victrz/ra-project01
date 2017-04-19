@@ -1,8 +1,11 @@
+<!--position from top-->
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Aloha</title>
     <meta charset="utf-8"/>
+    <link href="reset.css" type="text/css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -10,129 +13,141 @@
 <body>
 <container class="flex flex-col">
 
+  <header>
 
-  <header class="flex flex-just-between border">
-    <img src="images/aloha-logo.svg" class="logo">
-    <img src="images/cart-icon.svg" class="shopping">
+    <ul class="top-nav flex flex-just-between border-gray clear">
+      <li><img src="images/aloha-logo.svg" class="image-logo"></li>
+      <li><img src="images/cart-icon.svg" class="image-shopping"></li>
+    </ul>
   </header>
 
+<section class="top-margin">
 
-  <section class="season-background border flex flex-col flex-align-center">
-    <div class="text-collection text-white display-block padding text-shadow">NEW COLLECTION</div>
-    <div class="text-season text-white display-block padding text-shadow">Spring/Summer 2016</div>
+
+  <section class="background-image-season flex flex-col flex-align-center clear">
+    <div class="text-collection text-white display-block">NEW COLLECTION</div>
+    <div class="text-season text-size text-white display-block text-shadow">Spring/Summer 2016</div>
   </section>
 
 
-  <section class="border flex flex-col flex-align-center padding">
-    <div class="flex flex-just-center clear">
-      <p class="text-left text-black clear font-spacing">Hand-Crafted</p>
-      <p class="text-right text-black clear font-spacing">Styles</p>
+  <section class="border-gray flex flex-col flex-align-center padding">
+    <div class="flex flex-just-center clear padding-bottom">
+      <p class="text-left text-align-center text-black clear font-spacing">Hand-Crafted</p>
+      <p class="text-right text-align-center text-black clear font-spacing">Styles</p>
     </div>
-    <p class="text-blurb text-black clear">Aloha Apparel Co. sells only the finest ready-to-travel
+    <p class="text-blurb text-align-center text-black clear">Aloha Apparel Co. sells only the finest ready-to-travel
       clothing.  Browse our current selection of products or sign-
       up for updates below.
     </p>
   </section>
 
+<section class="flex flex-col flex-align-center padding">
 
-  <section class="border flex flex-col flex-align-center padding">
-    <div class="flex flex-just-center">
+    <div class="flex flex-just-center padding-bottom">
       <p class="text-left text-black clear">Most-Loved </p>
       <p class="text-right text-black clear"> Products</p>
     </div>
-    <div class="flex flex-col"></div>
+  <section class="flex flex-just-around flex-col-mobile flex-row-tablet flex-wrap-tablet flex-wrap-desktop">
     <div class="flex flex-col flex-align-center">
 
         <img src="images/stretch-knit-dress.jpg" class="image-product" height="320" width="320">
 
       <div class="flex flex-col">
-          <p class="text-prod-cat text-gray display-block clear">Dresses</p>
-          <p class="text-prod display-block text-red clear">Stretch Knit Dress</p>
-          <p class="text-prod-price text-gray display-block clear">$169.00</p>
+          <p class="text-prod-cat text-align-center text-gray display-block clear">Dresses</p>
+          <p class="text-prod text-align-center display-block text-red clear">Stretch Knit Dress</p>
+          <p class="text-prod-price text-align-center text-gray display-block clear">$169.00</p>
       </div>
     </div>
 
     <div class="flex flex-col flex-align-center">
 
-        <img src="images/stretch-knit-dress.jpg" class="image-product" height="320" width="320">
+          <img src="images/cotton-blue-shirt.jpg" class="image-product" height="320" width="320">
 
-      <div class="flex flex-col">
-          <p class="text-prod-cat text-gray display-block clear">Dresses</p>
-          <p class="text-prod display-block text-red clear">Stretch Knit Dress</p>
-          <p class="text-prod-price text-gray display-block clear">$169.00</p>
+        <div class="flex flex-col">
+            <p class="text-prod-cat text-align-center text-gray display-block clear">Shirts</p>
+            <p class="text-prod text-align-center display-block text-red clear">Cotton Blue Shirt</p>
+            <p class="text-prod-price text-align-center text-gray display-block clear">$89.00</p>
+        </div>
       </div>
-    </div>
 
     <div class="flex flex-col flex-align-center">
 
-        <img src="images/stretch-knit-dress.jpg" class="image-product" height="320" width="320">
+          <img src="images/checked-stretch-dress.jpg" class="image-product" height="320" width="320">
 
-      <div class="flex flex-col">
-          <p class="text-prod-cat text-gray display-block clear">Dresses</p>
-          <p class="text-prod display-block text-red clear">Stretch Knit Dress</p>
-          <p class="text-prod-price text-gray display-block clear">$169.00</p>
+        <div class="flex flex-col">
+            <p class="text-prod-cat text-align-center text-gray display-block clear">Dresses</p>
+            <p class="text-prod text-align-center display-block text-red clear">Checked Stretch Dress</p>
+            <p class="text-prod-price text-align-center text-gray display-block clear">$129.00</p>
+        </div>
       </div>
-    </div>
 
     <div class="flex flex-col flex-align-center">
 
-        <img src="images/stretch-knit-dress.jpg" class="image-product" height="320" width="320">
+          <img src="images/blue-hipster-backpack.jpg" class="image-product" height="320" width="320">
 
-      <div class="flex flex-col">
-          <p class="text-prod-cat text-gray display-block clear">Dresses</p>
-          <p class="text-prod display-block text-red clear">Stretch Knit Dress</p>
-          <p class="text-prod-price text-gray display-block clear">$169.00</p>
+        <div class="flex flex-col">
+            <p class="text-prod-cat text-align-center text-gray display-block clear">Bags</p>
+            <p class="text-prod text-align-center display-block text-red clear">Blue Hipster Backpack</p>
+            <p class="text-prod-price text-align-center text-gray display-block clear">$69.00</p>
+        </div>
       </div>
-    </div>
   </section>
 
+</section>
 
-  <section class="padding border flex flex-col updates-background">
-    <div class="flex flex-just-center clear">
-      <p class="text-left text-white text-shadow clear">Sign-up for</p>
-      <p class="text-right text-white text-shadow clear"> Updates</p>
-    </div>
-    <p class="text-blurb text-white clear">
+  <section class="flex flex-col background-image-updates padding">
+   <div class="flex flex-just-center clear padding-bottom">
+      <p class="text-left text-white clear">Sign-up for</p>
+      <p class="text-right text-white clear"> Updates</p>
+   </div>
+
+    <p class="text-blurb text-align-center text-white clear padding-bottom">
       Stay updated on our latest product releases, be the first to find
       out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.
     </p>
 
-
     <form class="flex flex-just-between">
-        <input type="text" name="Your Email" value="Enter your Email here" class="email text-email text-gray">
+        <input type="text" name="Your Email" value="Your Email" class="email text-email text-gray">
         <input type="submit" value="Subscribe"class="button text-white text-button">
     </form>
-
   </section>
 
-  <footer class="border">
-    <section class="flex flex-col text-footer padding">
+  <footer class="border-white padding flex flex-col-mobile flex-row-tablet flex-just-center-mobile flex-just-between-tablet flex-wrap-tablet">
 
-      <p class="text-white text-footer">c 2016 Aloha  Apparel Co.
-      Powered by HTML and CSS.</p>
+    <section class="text-footer width50-tablet flex-grow-tablet">
 
-      <p class="text-white text-footer">604-604-6040. info@alohaapparel.com</p>
+      <p class="text-white text-footer text-align-center-mobile text-align-left-tablet padding-bottom">c 2016 Aloha Apparel Co.
+      <br>Powered by HTML and CSS.</br></p>
 
-      <p class="text-white text-footer">1490 W Broadway
+      <p class="text-white text-footer text-align-center-mobile text-align-left-tablet padding-bottom">604-604-6040. info@alohaapparel.com</p>
+
+      <p class="text-white text-footer text-align-center-mobile text-align-left-tablet text-gray padding-bottom">1490 W Broadway
       Vancouver, BC., Canada
       </p>
-
-      <section>
-        <div class="flex flex-just-between">
-          <a href="https://www.facebook.com/"<span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
-          <a href="https://www.twitter.com/"<span class="fa fa-twitter fa-2x" aria-hidden="true"></span></a>
-          <a href="https://www.instagram.com/"<span class="fa fa-twitter fa-2x" aria-hidden="true"></span></a>
-
-
-        </div>
-        <div>
-        <!--social names in new div here-->
-        </div>
-      </section>
     </section>
+
+      <section class="padding-bottom flex flex-row-tablet flex-just-end-tablet">
+        <div class="flex flex-just-center flex-col-tablet flex-grow-mobile">
+          <p class="icon-padding text-footer"><a href="https://www.facebook.com/"<span class="fa fa-facebook" aria-hidden="true"></span> </a></p>
+          <p class="icon-padding text-footer"><a href="https://www.twitter.com/"<span class="fa fa-twitter" aria-hidden="true"></span></a></p>
+          <p class="icon-padding text-footer"><a href="https://www.instagram.com/"<span class="fa fa-instagram" aria-hidden="true"></span></a></p>
+          <p class="icon-padding text-footer"><a href="https://www.pinterest.com/"<span class="fa fa-pinterest" aria-hidden="true"></span></a></p>
+          <p class="icon-padding text-footer"><a href="https://www.google.com/"<span class="fa fa-google-plus" aria-hidden="true"></span></a></p>
+        </div>
+
+        <div class="display-none-mobile social-names">
+          <p class="icon-padding text-white text-footer">facebook</p>
+          <p class="icon-padding text-white text-footer">twitter</p>
+          <p class="icon-padding text-white text-footer">instagram</p>
+          <p class="icon-padding text-white text-footer">pinterest</p>
+          <p class="icon-padding text-white text-footer">google+</p>
+        </div>
+        <!--names for desktop in div, col-->
+      </section>
+
   </footer>
 
-
+</section>
 </container>
 </body>
 </html>
