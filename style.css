@@ -10,61 +10,58 @@
     src: url("fonts/PlayfairDisplay-Bold.otf") format("opentype");
     font-weight: bold;
 }
-
 @font-face {
     font-family: "PlayfairDisplay-BoldItalic";
     src: url("fonts/PlayfairDisplay-BoldItalic.otf") format("opentype");
     font-weight: bold;
     font-style: italic;
 }
-
 @font-face {
     font-family: "PlayfairDisplay-Italic";
     src: url("fonts/PlayfairDisplay-Italic.otf") format("opentype");
     font-style: italic;
 }
-
 @font-face {
     font-family: "PlayfairDisplay-Regular";
     src: url("fonts/PlayfairDisplay-Regular.otf") format("opentype");
     font-weight: none;
 }
-
 @font-face {
     font-family: "Raleway-Light";
     src: url("fonts/Raleway-Light.ttf") format("truetype");
     font-weight: lighter;
 }
-
 @font-face {
     font-family: "Raleway-LightItalic";
     src: url("fonts/Raleway-LightItalic.ttf") format("truetype");
     font-weight: lighter;
     font-style: italic;
 }
-
 @font-face {
     font-family: "Raleway-Medium";
     src: url("fonts/Raleway-Medium.ttf") format("truetype");
     font-weight: medium;
 }
-
 @font-face {
     font-family: "Raleway-MediumItalic";
     src: url("fonts/Raleway-MediumItalic.ttf") format("truetype");
     font-weight: medium;
     font-style: italic;
 }
-
-.font-size{
-  font-size: 16px;
-}
 .text-collection{
+  font-family: "Raleway-Medium";
+}
+.text-shop{
   font-family: "Raleway-Medium";
 }
 .text-season{
   font-family: "PlayfairDisplay-Regular";
   font-size: 2.2em;
+}
+.text-top-nav{
+  font-family: "Raleway-Medium";
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 .text-left{
   font-family: "PlayfairDisplay-Italic";
@@ -77,26 +74,26 @@
 }
 .text-blurb{
   font-family: "Raleway-Light";
+  line-height: 1em;
 }
 .text-prod-cat{
   font-family: "Raleway-Medium";
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 .text-prod{
   font-family: "PlayfairDisplay-Regular";
   display: block;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .text-prod-price{
   font-family: "Raleway-Medium";
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 .text-footer{
   font-family: "PlayfairDisplay-Regular";
 }
 .text-button{
   font-family:"Raleway-Medium";
-  font-size: 14px;
 }
 .text-email{
   font-family:"Raleway-Light";
@@ -116,15 +113,13 @@
 .text-align-center{
   text-align: center;
 }
+.align-center{
+    vertical-align: text-top;
+    display:block;
+}
 
-/* ---------------------------- */
 /* images and backgrounds */
 
-.image-product{
-  position: relative;
-  margin: auto;
-  z-index: -1;
-}
 .image-logo{
   height: 10vh;
   position: left;
@@ -139,21 +134,34 @@
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/banner-girl.png"),
   url("images/flower-bkgd.jpg" );
   height: 50vh;
-  width: 100%;
   background-position: bottom center;
   background-size: cover, 18vh, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   text-align: center;
   justify-content: center;
 }
-
 .background-image-updates{
-  background-image: url("images/wave-bkgd.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background: url("images/wave-bkgd.jpg") bottom center / cover no-repeat ;
 }
+.image-cat-mens{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/mens-category.jpg") center/cover no-repeat;
+}
+.image-cat-trends{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/trends-category.jpg" ) center/cover no-repeat;
+}
+.image-cat-glasses{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/glasses-category.jpg" ) center/cover no-repeat;
+}
+.image-cat-womens{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/womens-category.jpg" ) center/cover no-repeat;
+}
+.image-cat-sale{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/sale-category.jpg" ) center/cover no-repeat;
+}
+.image-cat-bags{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/bags-category.jpg" ) center/cover no-repeat;
+}
+
 /* flex */
 .flex{
   display: flex;
@@ -173,42 +181,50 @@
 .flex-align-center{
   align-content: center;
 }
+.flex-grow{
+  flex-grow:1;
+}
 
 /* Borders and edges */
 
-.border{
+.bottom-border-gray{
   border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #d7d7d7;
+  border-bottom-width: 1px;
+  border-bottom-color: #d7d7d7;
+}
+.border-white{
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 3px;
 }
 .padding{
   padding: 30px 30px;
 }
-
+.icon-padding{
+  padding: 0 10px 10px 10px;
+}
 .padding-bottom{
   padding-bottom: 30px;
 }
 .display-block{
   display: block;
 }
-.clear{
-  clear: both;
-}
+
+/* FORM EMAIL SUBSCRIPTION */
 
 form{
   border-radius: 50px;
   background-color: white;
   padding: 2px;
-  height: 10vh;
   margin: auto;
-  width: 100%;
-  max-width: 400px;
+  min-width: 400px;
 }
-.button{
+.email-button{
   background-color: #e2574c;
   border-radius: 50px;
   border: none;
   flex-grow: 1;
+  padding: 10px;
 }
 .email{
   border-style: none;
@@ -217,30 +233,141 @@ form{
   border-radius: 50px;
 }
 
-footer{
-  background-color: #242424;
-  height: 30vh;
+/* HEADER AND FOOTER */
+header{
+  z-index: 100000000;
+}
+.top-nav{
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.space-top-nav{
+  position: fixed;
+  top: 10vh;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #ffffff;
     position: fixed;
-    top: 0;
     width: 100%;
 }
 a: hover{
+  text-decoration: none;
   color: #b64036;
 }
 a:link, a:visited {
     text-decoration: none;
-    color: white;
+    color: #e2574c;
 }
-.top.nav{
-  height: 10vh;
+footer{
+  background-color: #242424;
 }
-.top-margin{
-  margin-top: 10vh;
+.social-names-width{
+  width:25%;
 }
+
+/*SHOP GRID*/
+.row-width-100{
+  width: 100%;
+}
+.box-margin{
+  margin: 1px;
+}
+.small-box{
+  height: 300px;
+}
+.large-box{
+  height: 300px;
+}
+
+
+/*MEDIA QUERIES*/
+
+  @media only screen and (max-device-width: 600px){
+      .display-none-mobile{
+        display: none;
+      }
+      .flex-col-mobile{
+        flex-direction: column;
+      }
+      .text-align-center-mobile{
+        text-align: center;
+      }
+      .flex-just-center-mobile{
+        justify-content: center;
+      }
+      .flex-grow-mobile{
+        flex-grow:1;
+      }
+      .top-margin-mobile{
+        margin-top: 10vh;
+      }
+      .flex-wrap-mobile{
+        flex-wrap: wrap;
+      }
+      .flex-1-mobile{
+        flex: 1;
+      }
+      .flex-2-mobile{
+        flex: 2;
+      }
+      .flex-grow-1-mobile{
+        flex-grow: 1;
+      }
+      .font-size-mobile{
+        font-size: 14px;
+      }
+  }
+  @media only screen
+    and (min-device-width: 600px){
+      .flex-row-tablet{
+        flex-direction: row;
+      }
+      .display-none-tablet{
+        display:none;
+      }
+      .flex-col-tablet{
+        flex-direction: column;
+      }
+      .flex-grow-tablet{
+        flex-grow:1;
+      }
+      .top-margin-tablet{
+        margin-top: 10vh;
+      }
+      .navigation-tablet{
+        padding-top: 4vh;
+        width: 50%;
+        text-align: center;
+      }
+      .flex-5-tablet{
+        flex: 5;
+      }
+      .font-size-tablet{
+        font-size: 16px;
+      }
+  }
+  @media only screen
+    and (min-device-width: 1240px){
+
+      .display-none-desktop{
+        display:none;
+      }
+      .navigation-desktop{
+        padding-top: 4vh;
+        width: 50%;
+        text-align: center;
+      }
+      .top-margin-desktop{
+        margin-top: 10vh;
+      }
+      .flex-5-desktop{
+        flex: 5;
+      }
+      .font-size-desktop{
+        font-size: 16px;
+      }
+    }
