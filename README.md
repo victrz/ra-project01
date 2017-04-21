@@ -18,3 +18,13 @@ Aloha project
 04/18/2017
 -mobile, tablet almost finished except alignment issue in footer in tablet/desktop
 -when this issue is resolved move on to carousel, navigation, java...
+
+04/19/2017
+-carousel flickity added
+-top navigation added
+-smooth scroll java added
+-carousel doesn't work when z-index applied to carousel-cell contained photos
+
+04/20/2017
+-flex box shopping grid
+-alert button
