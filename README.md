@@ -28,3 +28,6 @@ Aloha project
 04/20/2017
 -flex box shopping grid
 -alert button
+
+Updates:
+Project is in working order: some elements should still be tweaked to appear properly in mobile.
