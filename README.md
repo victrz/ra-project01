@@ -1,6 +1,10 @@
 # ra-project01
 Aloha project
 
+A homepage site for a fake apparel company.
+HTML5, CSS3, JavaScript
+Implemented E-mail validation with Javascript, flex box, Flickity Carousel Slider, Gulp
+
 
 
 04/17/2017
